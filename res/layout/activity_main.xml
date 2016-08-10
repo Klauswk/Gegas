@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Batalha" >
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvLojaPreco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seja bem vindo!"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/btmain_Batalhar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batalhar" />
+
+            <Button
+                android:id="@+id/btmain_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Status" />
+
+            <Button
+                android:id="@+id/btmain_Curar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Curar-se" />
+
+            <Button
+                android:id="@+id/btmain_equipamentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Equipamentos" />
+
+            <Button
+                android:id="@+id/btmain_loja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Loja" />
+
+            <Button
+                android:id="@+id/btmain_Craft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Criar Items" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

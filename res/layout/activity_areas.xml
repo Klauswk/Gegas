@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Batalha" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btareasCidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Cidade 1-5" />
+
+            <Button
+                android:id="@+id/btareasCampo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btareasCidade"
+                android:layout_alignBottom="@+id/btareasCidade"
+                android:layout_alignParentRight="true"
+                android:text="Campo 5-10" />
+
+            <Button
+                android:id="@+id/btareasFloresta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/btareasCidade"
+                android:layout_below="@+id/btareasCidade"
+                android:text="Floresta 8-15" />
+
+            <Button
+                android:id="@+id/btareasCaverna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btareasFloresta"
+                android:layout_alignBottom="@+id/btareasFloresta"
+                android:layout_alignLeft="@+id/btareasCampo"
+                android:text="Caverna 15-22" />
+
+            <Button
+                android:id="@+id/btareasMasmorra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/btareasFloresta"
+                android:layout_below="@+id/btareasFloresta"
+                android:text="Masmorra 22-30" />
+
+            <Button
+                android:id="@+id/btareasPantano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btareasMasmorra"
+                android:layout_alignBottom="@+id/btareasMasmorra"
+                android:layout_alignLeft="@+id/btareasCaverna"
+                android:text="Pantano Amaldiçoado 30-45" />
+
+            <Button
+                android:id="@+id/btareasGlacies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Glacies 45-60" />
+
+            <Button
+                android:id="@+id/btareasIgnes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btareasPantano"
+                android:layout_below="@+id/btareasPantano"
+                android:text="Ignis Domus 60-80" />
+
+            <Button
+                android:id="@+id/btareasSolum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solum novus 80+" />
+
+            <Button
+                android:id="@+id/btareasCaedes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btareasSolum"
+                android:layout_alignParentBottom="true"
+                android:text="Caedes Mortuus 95+" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

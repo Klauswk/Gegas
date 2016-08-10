@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Batalha" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvBatalha_Vida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vida"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ProgressBar
+            android:id="@+id/pbVida"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/tvBatalha_Experiencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Experiencia"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ProgressBar
+            android:id="@+id/pbXp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/etNomeMonstro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="1dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ProgressBar
+            android:id="@+id/pbVidamonstro"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status" />
+
+            <Button
+                android:id="@+id/btAtacar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="Atacar" />
+
+            <Button
+                android:id="@+id/btMagia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Magia" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
